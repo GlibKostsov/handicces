@@ -1,11 +1,8 @@
 import Modal from '../components/UI/Modal'
 import Card from '../components/UI/Card'
 import classes from './GetStartedScreen.module.css'
-
+import { Grid } from '@material-ui/core'
 import { useState, useEffect } from 'react'
-// import { useDispatch, useSelector } from 'react-redux'
-
-// import { register } from '../actions/userActions'
 
 const GetStarted = ({ history }) => {
   const [email, setEmail] = useState('')
@@ -13,11 +10,6 @@ const GetStarted = ({ history }) => {
   const [lastName, setLastName] = useState('')
   const [password, setPassword] = useState('')
   const [confirmPassword, setConfirmPassword] = useState('')
-
-  // const dispatch = useDispatch()
-
-  // const userRegister = useSelector((state) => state.userRegister)
-  // const { loading, error, userInfo } = userRegister
 
   const submitHandler = (e) => {
     e.preventDefault()
@@ -30,12 +22,15 @@ const GetStarted = ({ history }) => {
   }
   return (
     <Modal>
-      <Card>
+      <Grid
+        style={{ alignSelf: 'center' }}
+        className={classes.card}
+        container
+        alignItems='center'
+        justify='center'
+        spacing={4}
+      >
         <div className={classes.header}>
-          <div className={classes.action}>
-            <button className={classes.active}>Sign Up</button>
-            <button className={classes.disabled}>Log In</button>
-          </div>
           <h1 className={classes.message}>Sign Up For Free</h1>
         </div>
 
@@ -94,7 +89,7 @@ const GetStarted = ({ history }) => {
           <spin className={classes.forgot}>forgot password?</spin>
           <button className={classes.start}>GET STARTED</button>
         </form>
-      </Card>
+      </Grid>
     </Modal>
   )
 }

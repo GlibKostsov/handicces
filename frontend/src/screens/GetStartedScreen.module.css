@@ -3,10 +3,15 @@
   flex-direction: column;
   align-items: center;
 }
-
-.header button {
-  width: 200px;
+.card {
+  margin: 2rem;
+  padding: 1rem 0.5rem;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 10px 10px 0 0;
+  background-color: white;
 }
+
 .disabled {
   cursor: not-allowed;
   pointer-events: none;
@@ -70,5 +75,25 @@
   margin-bottom: 2rem;
 }
 .start {
-  width: 400px;
+  width: 90%;
+}
+
+.form button {
+  font: inherit;
+  cursor: pointer;
+  background-color: #ffae00b7;
+  border: 1px solid #ffae00b7;
+  color: white;
+  padding: 0.5rem 2rem;
+  border-radius: 20px;
+  font-weight: bold;
+  margin: 1rem;
+  text-align: center;
+}
+
+.form button:hover,
+.form button:active {
+  background-color: #106576;
+  border-color: #106576;
+  color: white;
 }
