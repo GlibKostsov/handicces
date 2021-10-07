@@ -9,23 +9,23 @@ export default function OfficeListScreen() {
         Notre selection espaces handi-accessibles
       </h1>
       <Grid container alignItems='center' justify='center' spacing={4}>
-        <Grid item xs={6} md={6}>
+        <Grid item xs={12} md={6}>
           <OfficeCard />
         </Grid>
-        <Grid item xs={6} md={6}>
+        <Grid item xs={12} md={6}>
           <OfficeCard />
         </Grid>
 
-        <Grid item xs={6} md={6}>
+        <Grid item xs={12} md={6}>
           <OfficeCard />
         </Grid>
-        <Grid item xs={6} md={6}>
+        <Grid item xs={12} md={6}>
           <OfficeCard />
         </Grid>
-        <Grid item xs={6} md={6}>
+        <Grid item xs={12} md={6}>
           <OfficeCard />
         </Grid>
-        <Grid item xs={6} md={6}>
+        <Grid item xs={12} md={6}>
           <OfficeCard />
         </Grid>
       </Grid>

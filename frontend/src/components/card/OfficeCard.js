@@ -1,6 +1,7 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import clsx from 'clsx'
+import Grid from '@material-ui/core/Grid'
 import Card from '@material-ui/core/Card'
 import CardHeader from '@material-ui/core/CardHeader'
 import CardMedia from '@material-ui/core/CardMedia'
@@ -50,9 +51,10 @@ export default function OfficeCard() {
     <Card elevation={8} className={classes.root}>
       <CardHeader
         avatar={
-          <Avatar aria-label='bureau' className={classes.avatar}>
-            S
-          </Avatar>
+          <Avatar
+            alt='Remy Sharp'
+            src='https://v4.mui.com/static/images/avatar/1.jpg/'
+          />
         }
         action={
           <IconButton aria-label='settings'>
@@ -62,6 +64,14 @@ export default function OfficeCard() {
         title='Mega Bureau Centre Montpellier'
         subheader='September 14, 2016'
       />
+      <CardActions disableSpacing>
+        <IconButton aria-label='add to favorites'>
+          <FavoriteIcon />
+        </IconButton>
+        <IconButton aria-label='share'>
+          <ShareIcon />
+        </IconButton>
+      </CardActions>
       <CardMedia
         className={classes.media}
         image='https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1469&q=80'
@@ -76,13 +86,6 @@ export default function OfficeCard() {
       </CardContent>
 
       <CardActions disableSpacing>
-        <IconButton aria-label='add to favorites'>
-          <FavoriteIcon />
-        </IconButton>
-        <IconButton aria-label='share'>
-          <ShareIcon />
-        </IconButton>
-
         <IconButton aria-label='hearing'>
           <HearingIcon />
         </IconButton>
@@ -96,6 +99,11 @@ export default function OfficeCard() {
         <IconButton aria-label='vision'>
           <RemoveRedEyeIcon />
         </IconButton>
+      </CardActions>
+
+      <CardActions style={{ padding: '1rem' }}>
+        <Typography variant='h5'>Tarif:</Typography>
+        <Typography variant='h5'>440€ / jour</Typography>
       </CardActions>
     </Card>
   )

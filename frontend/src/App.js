@@ -1,6 +1,6 @@
 import './App.css'
 import { Switch, Route, Link } from 'react-router-dom'
-
+import OfficeDetails from './screens/OfficeDetail'
 import SimpleContainer from './components/container/SimpleContainer'
 import OfficeListScreen from './screens/OfficeListScreen'
 import Header from './components/header/Header'
@@ -12,6 +12,7 @@ function App() {
       <main>
         <SimpleContainer>
           <Switch>
+            <Route path='/offices/:id' component={OfficeDetails} />
             <Route path='/offices/' component={OfficeListScreen} />
           </Switch>
         </SimpleContainer>
