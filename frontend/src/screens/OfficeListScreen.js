@@ -2,6 +2,8 @@ import React, { Fragment } from 'react'
 import { Grid } from '@material-ui/core'
 import OfficeCard from '../components/card/OfficeCard'
 
+import { Link } from 'react-router-dom'
+
 export default function OfficeListScreen() {
   return (
     <Fragment>
@@ -10,17 +12,25 @@ export default function OfficeListScreen() {
       </h1>
       <Grid container alignItems='center' justify='center' spacing={4}>
         <Grid item xs={12} md={6}>
-          <OfficeCard />
+          <Link to={'office/1'}>
+            <OfficeCard />
+          </Link>
         </Grid>
         <Grid item xs={12} md={6}>
-          <OfficeCard />
+          <Link to={'office/1'}>
+            <OfficeCard />
+          </Link>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <OfficeCard />
+          <Link to={'office/1'}>
+            <OfficeCard />
+          </Link>
         </Grid>
         <Grid item xs={12} md={6}>
-          <OfficeCard />
+          <Link to={'office/1'}>
+            <OfficeCard />
+          </Link>
         </Grid>
         <Grid item xs={12} md={6}>
           <OfficeCard />

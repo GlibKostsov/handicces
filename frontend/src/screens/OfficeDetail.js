@@ -185,21 +185,3 @@ export default function OfficeDetail() {
     </>
   )
 }
-
-{
-  /* <CardActions disableSpacing>
-<IconButton aria-label='hearing'>
-  <HearingIcon />
-</IconButton>
-
-<IconButton aria-label='accessible'>
-  <AccessibleIcon />
-</IconButton>
-<IconButton aria-label='accessibility'>
-  <AccessibilityIcon />
-</IconButton>
-<IconButton aria-label='vision'>
-  <RemoveRedEyeIcon />
-</IconButton>
-</CardActions> */
-}

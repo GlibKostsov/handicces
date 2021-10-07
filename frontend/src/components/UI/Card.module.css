@@ -1,0 +1,28 @@
+.card {
+  margin: 1rem;
+  padding: 1rem 0.5rem;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 10px 10px 0 0;
+  background-color: white;
+}
+
+.card button {
+  font: inherit;
+  cursor: pointer;
+  background-color: #ffae00b7;
+  border: 1px solid #ffae00b7;
+  color: white;
+  padding: 0.5rem 2rem;
+  border-radius: 20px;
+  font-weight: bold;
+  margin: 1rem;
+  text-align: center;
+}
+
+.card button:hover,
+.card button:active {
+  background-color: #106576;
+  border-color: #106576;
+  color: white;
+}

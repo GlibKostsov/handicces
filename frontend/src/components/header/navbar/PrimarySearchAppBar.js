@@ -15,7 +15,9 @@ import MailIcon from '@material-ui/icons/Mail'
 import NotificationsIcon from '@material-ui/icons/Notifications'
 import MoreIcon from '@material-ui/icons/MoreVert'
 import SimpleContainer from '../../container/SimpleContainer'
-
+import Button from '@material-ui/core/Button'
+import AddIcon from '@material-ui/icons/Add'
+import { Link } from 'react-router-dom'
 // 948C75
 // A19DA3
 // FCC931
@@ -172,15 +174,14 @@ export default function PrimarySearchAppBar() {
       <AppBar style={{ backgroundColor: '#FCC931' }} position='static'>
         <SimpleContainer SimpleContainer>
           <Toolbar>
-            <IconButton
-              edge='start'
-              className={classes.menuButton}
-              color='inherit'
-              aria-label='open drawer'
+            <Typography
+              component={Link}
+              to={'/home'}
+              style={{ textDecoration: 'none', color: 'white' }}
+              className={classes.title}
+              variant='h5'
+              noWrap
             >
-              <MenuIcon />
-            </IconButton>
-            <Typography className={classes.title} variant='h6' noWrap>
               Handiccès
             </Typography>
 
@@ -198,6 +199,15 @@ export default function PrimarySearchAppBar() {
               />
             </div>
 
+            <IconButton
+              component={Link}
+              to={'/office/new'}
+              style={{ textDecoration: 'none', color: 'white' }}
+              aria-label='add new office'
+            >
+              <AddIcon color='white' />
+            </IconButton>
+            <Typography>Ajouter Nouvelle</Typography>
             <div className={classes.grow} />
             <div className={classes.sectionDesktop}>
               <IconButton aria-label='show 4 new mails' color='inherit'>

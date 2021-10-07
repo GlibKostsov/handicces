@@ -1,0 +1,74 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header button {
+  width: 200px;
+}
+.disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  background-color: #c1bdba !important;
+  border-color: #c1bdba !important;
+}
+.active {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.message {
+  margin-top: 4rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form .action {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: right;
+}
+
+.form .input {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input {
+  text-align: center;
+  font: inherit;
+  padding: 0.35rem 0.35rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.form input:focus {
+  outline: none;
+  border-color: #106576;
+  background: #f6dbfc;
+}
+
+.form.invalid input {
+  border-color: red;
+  background: #fbdada;
+}
+
+.forgot {
+  text-align: right;
+  display: flex;
+  align-self: end;
+  margin-right: 6rem;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+}
+.start {
+  width: 400px;
+}
